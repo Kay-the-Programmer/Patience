@@ -22,7 +22,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
+    "esModuleInterop": true, // Added for better ES module interoperability
+    "types": ["vite/client", "node", "jest"],
     "paths": {
       "@/*" :  ["./*"]
     }
