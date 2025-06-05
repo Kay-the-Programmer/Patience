@@ -1,0 +1,6 @@
+{
+  "name": "Online File Tracking System",
+  "description": "A web application for tracking the movement of physical files between offices within an organization.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
