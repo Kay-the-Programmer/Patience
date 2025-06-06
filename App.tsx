@@ -15,6 +15,7 @@ import { APP_TITLE } from './constants';
 import AuditLogPage from './pages/Admin/AuditLogPage';
 import ReportingPage from './pages/Admin/ReportingPage';
 import WorkflowManagementPage from './pages/Admin/WorkflowManagementPage';
+import UserManagementPage from './pages/Admin/UserManagementPage'; // Import UserManagementPage
 import { UserRole } from './types';
 
 const App: React.FC = () => {
@@ -45,6 +46,14 @@ const App: React.FC = () => {
                 <Route 
                   path="/admin/workflows" 
                   element={<ProtectedRoute roles={[UserRole.ADMIN]}><WorkflowManagementPage /></ProtectedRoute>} 
+                />
+                <Route
+                  path="/admin/users"
+                  element={
+                    <ProtectedRoute roles={[UserRole.ADMIN]}>
+                      <UserManagementPage />
+                    </ProtectedRoute>
+                  }
                 />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
