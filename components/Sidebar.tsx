@@ -47,7 +47,13 @@ const Sidebar: React.FC = () => {
               </svg>
               Manage Offices
             </NavLink>
-            <NavLink to="/admin/workflows" className={navLinkClasses}> {/* New Link for Workflows */}
+            <NavLink to="/admin/users" className={navLinkClasses}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={iconClasses}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A9.06 9.06 0 016 18.719m12 0a9.094 9.094 0 00-3.741-.479m0 0a9 9 0 00-9.478 0m9.478 0c1.345 0 2.591.301 3.741.835m-12.482 0c1.15-.534 2.396-.835 3.741-.835m0 0a6 6 0 00-4.738 1.982L6 18.72m6.562-1.8-1.313-.79a4.5 4.5 0 00-4.5 0l-1.313.79M12 12a3 3 0 100-6 3 3 0 000 6z" />
+              </svg>
+              Manage Users
+            </NavLink>
+            <NavLink to="/admin/workflows" className={navLinkClasses}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={iconClasses}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 12h9.75m-9.75 6h9.75M3.75 6H7.5m-3.75 6H7.5m-3.75 6H7.5" />
               </svg>
